@@ -71,6 +71,12 @@ This helped me understand that a more complex architecture does not automaticall
 
 **Requirements:** Python, PyTorch, pandas, and a Jupyter-compatible environment such as Google Colab. Training times may vary depending on hardware and runtime conditions.
 
+## Final Reflection
+
+### Final Reflection: What Makes Transformers Powerful?
+
+After comparing the three models, I believe what makes Transformers powerful for language modeling is their ability to use self-attention to identify important relationships between characters within a sequence. As discussed in the notebook, the Bigram model,  only considers the immediately previous character, and the LSTM, which processes characters sequentially through memory states. What makes transformers special and powerful is that it can directly examine multiple previous characters and determine which are most relevant for making predictions. Additionally, their ability to process multiple positions in parallel during training makes them more efficient and scalable when working with larger datasets. Although my Transformer did not outperform the LSTM in this experiment, I learned that self-attention provides an important advantage for capturing complex language patterns, especially when models have sufficient training and longer context windows. I believe that in future if I were to ever work with a larger dataset containing longer and more complex text sequences in the future, like books, articles, or long conversations, then Transformers would be particularly effective. This is because they can identify relationships between words across longer passages and use that context to generate more meaningful and coherent text.
+
 ## AI Use
 
 I used ChatGPT to help understand NLP concepts, debug code, organize model comparisons, and improve explanations throughout my notebook. I also used ChatGPT to generate the initial draft of my README.md based on my NLP midterm project, including the dataset description, model explanations, results table, findings, and instructions for running the notebook. I reviewed the AI-generated suggestions and README content, made necessary changes, and ensured that the information accurately reflected my implementation, experimental results, and understanding of the project.
